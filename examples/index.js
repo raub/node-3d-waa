@@ -1,17 +1,15 @@
 'use strict';
 
-var SegfaultHandler = require('segfault-handler');
- 
-SegfaultHandler.registerHandler('crash.log');
-
-const core3d = require('3d-core-raub');
-const webaudio = require('3d-webaudio-raub');
+const init = require('3d-core-raub');
+const webaudio3d = require('..');
 
 
-webaudio(core3d);
-
-const { three, window, requestAnimationFrame } = core3d;
-
+const {
+	webaudio,
+	three,
+	window,
+	requestAnimationFrame,
+} = init({ plugins: [webaudio3d] });
 
 (async () => { try {
 	
