@@ -1,7 +1,7 @@
 {
 	"author": "Luis Blanco <luisblanco1337@gmail.com>",
 	"name": "3d-webaudio-raub",
-	"version": "2.0.0",
+	"version": "1.0.0",
 	"description": "WebAudio plugin for Node.js 3D Core",
 	"license": "MIT",
 	"main": "index.js",
