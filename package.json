@@ -27,6 +27,6 @@
 		"url": "https://github.com/node-3d/3d-webaudio-raub.git"
 	},
 	"dependencies": {
-		"webaudio-raub": "https://github.com/node-3d/webaudio-raub.git"
+		"webaudio-raub": "1.0.0"
 	}
 }

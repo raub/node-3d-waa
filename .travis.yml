@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "10.16.1"
+  - "12.13.0"
 
 install:
   - cd test
@@ -22,5 +22,8 @@ matrix:
       - echo OK.
   - name: "Windows"
     os: windows
+    before_install:
+      # Fix travis bug "git-sh-setup: file not found"
+      - export PATH=$PATH:"/c/Program Files/Git/mingw64/libexec/git-core"
     script:
       - echo OK.

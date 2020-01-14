@@ -22,3 +22,21 @@ const { webaudio, window } = init({ plugins: ['3d-webaudio-raub'] });
 ```
 
 **This module is WORK IN PROGRESS.** Some features are missing for good.
+
+---
+
+First, import/init the plugin:
+
+```
+const init3dCore = require('3d-core-raub');
+
+const { webaudio, window } = init3dCore({ plugins: ['3d-qml-raub'] });
+
+// webaudio.AudioContext === window.AudioContext === global.AudioContext
+
+// ...
+```
+
+For the full contents of currently exported `webaudio` object, see the
+docs of [webaudio-raub](https://github.com/node-3d/webaudio-raub). This plugin
+reexports those as is.
