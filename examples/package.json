@@ -7,6 +7,6 @@
 		"postinstall": "cd .. && npm ci"
 	},
 	"dependencies": {
-		"3d-core-raub": "3.0.0"
+		"3d-core-raub": "3.5.x"
 	}
 }

@@ -1,4 +1,6 @@
 language: node_js
+os: linux
+dist: xenial
 node_js:
   - "12.13.0"
 
@@ -7,12 +9,11 @@ install:
   - npm ci
 
 
-matrix:
+jobs:
   include:
   - name: "Linux"
     os: linux
     dist: xenial
-    sudo: false
     before_install:
       - export DISPLAY=:99
       - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x24"
